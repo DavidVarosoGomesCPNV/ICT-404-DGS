@@ -75,6 +75,7 @@
             this.txtNom.Size = new System.Drawing.Size(22, 13);
             this.txtNom.TabIndex = 3;
             this.txtNom.Text = ". . .";
+            this.txtNom.Click += new System.EventHandler(this.txtNom_Click);
             // 
             // lblBonjourQui
             // 

@@ -25,7 +25,7 @@ namespace ICT404_Exo_Bonjour_Qui
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Bienvenu_Click(object sender, EventArgs e)
@@ -38,6 +38,11 @@ namespace ICT404_Exo_Bonjour_Qui
             if (txtboxName.Text == "")
                 btnBienvenu.Enabled = false;
             else btnBienvenu.Enabled = true;
+        }
+
+        private void txtNom_Click(object sender, EventArgs e)
+        {
+            btnBienvenu.Text = string.Format("{0:dd MMM yyyy}", DateTime.Now);
         }
     }
 }
