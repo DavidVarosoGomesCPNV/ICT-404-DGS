@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ExerciceDeductionFiscales
 {
-    public partial class Form1 : Form
+    public partial class frmDeductionFiscale : Form
     {
-        public Form1()
+        public frmDeductionFiscale()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
