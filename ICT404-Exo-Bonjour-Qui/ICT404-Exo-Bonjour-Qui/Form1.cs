@@ -30,19 +30,24 @@ namespace ICT404_Exo_Bonjour_Qui
 
         private void Bienvenu_Click(object sender, EventArgs e)
         {
-            
+            txtNom.Text = "Bonjour " + cmdName.Text;
         }
 
         private void lblBonjourQui_Load(object sender, EventArgs e)
         {
-            if (txtboxName.Text == "")
+            if (cmdName.Text == "")
                 btnBienvenu.Enabled = false;
             else btnBienvenu.Enabled = true;
+            
         }
 
-        private void txtNom_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            btnBienvenu.Text = string.Format("{0:dd MMM yyyy}", DateTime.Now);
+            DialogResult Res = MessageBox.Show("Voulez-vous vraiment quitter l'application ?",
+            "FormClosing",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question);
+            Close();
         }
     }
 }
