@@ -39,6 +39,7 @@
             this.txtbxDeductionTransport = new System.Windows.Forms.TextBox();
             this.txtbxDeductionfidel = new System.Windows.Forms.TextBox();
             this.btnCalcul = new System.Windows.Forms.Button();
+            this.lblRevenuImposable = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblRevenuA
@@ -67,6 +68,8 @@
             this.txtbxRevenuA.Name = "txtbxRevenuA";
             this.txtbxRevenuA.Size = new System.Drawing.Size(105, 20);
             this.txtbxRevenuA.TabIndex = 2;
+            this.txtbxRevenuA.TextChanged += new System.EventHandler(this.txtbxRevenuA_TextChanged);
+            this.txtbxRevenuA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtbxRevenuA_KeyDown);
             // 
             // txtbxCoefFamilial
             // 
@@ -74,6 +77,7 @@
             this.txtbxCoefFamilial.Name = "txtbxCoefFamilial";
             this.txtbxCoefFamilial.Size = new System.Drawing.Size(50, 20);
             this.txtbxCoefFamilial.TabIndex = 3;
+            this.txtbxCoefFamilial.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtbxCoefFamilial_KeyDown);
             // 
             // chkDeductionJeune
             // 
@@ -114,6 +118,7 @@
             this.txtbxDeductionJeune.Name = "txtbxDeductionJeune";
             this.txtbxDeductionJeune.Size = new System.Drawing.Size(50, 20);
             this.txtbxDeductionJeune.TabIndex = 7;
+            this.txtbxDeductionJeune.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtbxDeductionJeune_KeyDown);
             // 
             // txtbxDeductionTransport
             // 
@@ -121,6 +126,7 @@
             this.txtbxDeductionTransport.Name = "txtbxDeductionTransport";
             this.txtbxDeductionTransport.Size = new System.Drawing.Size(50, 20);
             this.txtbxDeductionTransport.TabIndex = 8;
+            this.txtbxDeductionTransport.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtbxDeductionTransport_KeyDown);
             // 
             // txtbxDeductionfidel
             // 
@@ -128,6 +134,7 @@
             this.txtbxDeductionfidel.Name = "txtbxDeductionfidel";
             this.txtbxDeductionfidel.Size = new System.Drawing.Size(50, 20);
             this.txtbxDeductionfidel.TabIndex = 9;
+            this.txtbxDeductionfidel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtbxDeductionfidel_KeyDown);
             // 
             // btnCalcul
             // 
@@ -138,12 +145,24 @@
             this.btnCalcul.TabIndex = 10;
             this.btnCalcul.Text = "Calcul";
             this.btnCalcul.UseVisualStyleBackColor = true;
+            this.btnCalcul.Click += new System.EventHandler(this.btnCalcul_Click);
+            // 
+            // lblRevenuImposable
+            // 
+            this.lblRevenuImposable.AutoSize = true;
+            this.lblRevenuImposable.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblRevenuImposable.Location = new System.Drawing.Point(20, 382);
+            this.lblRevenuImposable.Name = "lblRevenuImposable";
+            this.lblRevenuImposable.Size = new System.Drawing.Size(210, 25);
+            this.lblRevenuImposable.TabIndex = 11;
+            this.lblRevenuImposable.Text = "Revenu imposable : fr. ";
             // 
             // frmDeductionFiscale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(359, 451);
+            this.Controls.Add(this.lblRevenuImposable);
             this.Controls.Add(this.btnCalcul);
             this.Controls.Add(this.txtbxDeductionfidel);
             this.Controls.Add(this.txtbxDeductionTransport);
@@ -175,6 +194,7 @@
         private System.Windows.Forms.TextBox txtbxDeductionTransport;
         private System.Windows.Forms.TextBox txtbxDeductionfidel;
         private System.Windows.Forms.Button btnCalcul;
+        private System.Windows.Forms.Label lblRevenuImposable;
     }
 }
 
