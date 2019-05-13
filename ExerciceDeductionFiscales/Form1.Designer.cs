@@ -33,7 +33,7 @@
             this.txtbxRevenuA = new System.Windows.Forms.TextBox();
             this.txtbxCoefFamilial = new System.Windows.Forms.TextBox();
             this.chkDeductionJeune = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkFidelite = new System.Windows.Forms.CheckBox();
             this.chkDeductionTransport = new System.Windows.Forms.CheckBox();
             this.txtbxDeductionJeune = new System.Windows.Forms.TextBox();
             this.txtbxDeductionTransport = new System.Windows.Forms.TextBox();
@@ -90,16 +90,16 @@
             this.chkDeductionJeune.Text = "Déduciton jeune";
             this.chkDeductionJeune.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // chkFidelite
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.checkBox1.Location = new System.Drawing.Point(59, 216);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(162, 21);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Déduciton fidélité (%)";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkFidelite.AutoSize = true;
+            this.chkFidelite.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.chkFidelite.Location = new System.Drawing.Point(59, 216);
+            this.chkFidelite.Name = "chkFidelite";
+            this.chkFidelite.Size = new System.Drawing.Size(162, 21);
+            this.chkFidelite.TabIndex = 5;
+            this.chkFidelite.Text = "Déduciton fidélité (%)";
+            this.chkFidelite.UseVisualStyleBackColor = true;
             // 
             // chkDeductionTransport
             // 
@@ -118,6 +118,7 @@
             this.txtbxDeductionJeune.Name = "txtbxDeductionJeune";
             this.txtbxDeductionJeune.Size = new System.Drawing.Size(50, 20);
             this.txtbxDeductionJeune.TabIndex = 7;
+            this.txtbxDeductionJeune.Text = "900";
             this.txtbxDeductionJeune.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtbxDeductionJeune_KeyDown);
             // 
             // txtbxDeductionTransport
@@ -126,6 +127,7 @@
             this.txtbxDeductionTransport.Name = "txtbxDeductionTransport";
             this.txtbxDeductionTransport.Size = new System.Drawing.Size(50, 20);
             this.txtbxDeductionTransport.TabIndex = 8;
+            this.txtbxDeductionTransport.Text = "650";
             this.txtbxDeductionTransport.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtbxDeductionTransport_KeyDown);
             // 
             // txtbxDeductionfidel
@@ -134,6 +136,7 @@
             this.txtbxDeductionfidel.Name = "txtbxDeductionfidel";
             this.txtbxDeductionfidel.Size = new System.Drawing.Size(50, 20);
             this.txtbxDeductionfidel.TabIndex = 9;
+            this.txtbxDeductionfidel.Text = "0";
             this.txtbxDeductionfidel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtbxDeductionfidel_KeyDown);
             // 
             // btnCalcul
@@ -168,7 +171,7 @@
             this.Controls.Add(this.txtbxDeductionTransport);
             this.Controls.Add(this.txtbxDeductionJeune);
             this.Controls.Add(this.chkDeductionTransport);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.chkFidelite);
             this.Controls.Add(this.chkDeductionJeune);
             this.Controls.Add(this.txtbxCoefFamilial);
             this.Controls.Add(this.txtbxRevenuA);
@@ -188,7 +191,7 @@
         private System.Windows.Forms.TextBox txtbxRevenuA;
         private System.Windows.Forms.TextBox txtbxCoefFamilial;
         private System.Windows.Forms.CheckBox chkDeductionJeune;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkFidelite;
         private System.Windows.Forms.CheckBox chkDeductionTransport;
         private System.Windows.Forms.TextBox txtbxDeductionJeune;
         private System.Windows.Forms.TextBox txtbxDeductionTransport;

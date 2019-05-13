@@ -24,6 +24,37 @@ namespace ExerciceDeductionFiscales
 
         private void btnCalcul_Click(object sender, EventArgs e)
         {
+            float a, b, c, d, reponse;
+
+            a = Convert.ToSingle(txtbxRevenuA.Text);
+            b = Convert.ToSingle(txtbxCoefFamilial.Text);
+            c = Convert.ToSingle(txtbxDeductionJeune.Text);
+            d = Convert.ToSingle(txtbxDeductionTransport.Text);
+
+            reponse = a / b;
+                    
+
+            if (chkDeductionJeune.Checked == true)
+            {
+
+                reponse = reponse - c;
+
+            }
+
+            if (chkDeductionTransport.Checked == true)
+            {
+                reponse = reponse - d;
+            }
+
+            if (chkFidelite.Checked == true)
+            {
+                reponse = reponse - d;
+            }
+
+
+            lblRevenuImposable.Visible = true;
+            lblRevenuImposable.Text = "Revenu imposable : " + reponse;
+
 
         }
 
@@ -71,5 +102,7 @@ namespace ExerciceDeductionFiscales
         {
 
         }
+
+      
     }
 }
