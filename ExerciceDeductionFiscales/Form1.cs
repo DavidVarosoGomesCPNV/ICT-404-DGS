@@ -15,6 +15,7 @@ namespace ExerciceDeductionFiscales
         public frmDeductionFiscale()
         {
             InitializeComponent();
+            lblRevenuImposable.Visible = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -24,15 +25,27 @@ namespace ExerciceDeductionFiscales
 
         private void btnCalcul_Click(object sender, EventArgs e)
         {
-            float a, b, c, d, reponse;
+
+
+            float a, b, c, d, f, pourcents, reponse;
 
             a = Convert.ToSingle(txtbxRevenuA.Text);
             b = Convert.ToSingle(txtbxCoefFamilial.Text);
             c = Convert.ToSingle(txtbxDeductionJeune.Text);
             d = Convert.ToSingle(txtbxDeductionTransport.Text);
+            f = Convert.ToSingle(txtbxDeductionfidel.Text);
 
             reponse = a / b;
-                    
+
+
+            if (txtbxRevenuA.Text == "") ;
+            {
+                MessageBox.Show("REMPLISEZ LES CASES ",
+                "Sécurité");
+
+
+            }
+
 
             if (chkDeductionJeune.Checked == true)
             {
@@ -48,7 +61,10 @@ namespace ExerciceDeductionFiscales
 
             if (chkFidelite.Checked == true)
             {
-                reponse = reponse - d;
+                pourcents = f / 100;
+                reponse = reponse - pourcents*100;
+       
+                           
             }
 
 

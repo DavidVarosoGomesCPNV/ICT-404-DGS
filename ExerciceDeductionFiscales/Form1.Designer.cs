@@ -132,7 +132,7 @@
             // 
             // txtbxDeductionfidel
             // 
-            this.txtbxDeductionfidel.Location = new System.Drawing.Point(280, 223);
+            this.txtbxDeductionfidel.Location = new System.Drawing.Point(280, 217);
             this.txtbxDeductionfidel.Name = "txtbxDeductionfidel";
             this.txtbxDeductionfidel.Size = new System.Drawing.Size(50, 20);
             this.txtbxDeductionfidel.TabIndex = 9;
