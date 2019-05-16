@@ -159,6 +159,7 @@
             this.lblRevenuImposable.Size = new System.Drawing.Size(210, 25);
             this.lblRevenuImposable.TabIndex = 11;
             this.lblRevenuImposable.Text = "Revenu imposable : fr. ";
+            
             // 
             // frmDeductionFiscale
             // 
