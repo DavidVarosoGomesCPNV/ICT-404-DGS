@@ -26,6 +26,25 @@ namespace ExerciceDeductionFiscales
         private void btnCalcul_Click(object sender, EventArgs e)
         {
 
+            double RBrut;
+            double CoefBrut;
+
+            if (!double.TryParse(txtbxRevenuA.Text, out RBrut))
+            {
+                MessageBox.Show("Veuilez remplir la case revenu correctement !",
+                "Sécurité");
+                txtbxRevenuA.Focus();
+                return;
+            }
+
+            if (!double.TryParse(txtbxCoefFamilial.Text, out CoefBrut))
+            {
+                MessageBox.Show("Veuilez remplir la case coefficient correctement !",
+                "Sécurité");
+                txtbxCoefFamilial.Focus();
+                return;
+            }
+
 
             float a, b, c, d, f, pourcents, reponse;
 
@@ -37,14 +56,7 @@ namespace ExerciceDeductionFiscales
 
             reponse = a / b;
 
-
-            if (txtbxRevenuA.Text == "") ;
-            {
-                MessageBox.Show("REMPLISEZ LES CASES ",
-                "Sécurité");
-
-
-            }
+           
 
 
             if (chkDeductionJeune.Checked == true)

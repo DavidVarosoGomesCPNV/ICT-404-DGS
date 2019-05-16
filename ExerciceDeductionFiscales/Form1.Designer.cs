@@ -177,6 +177,8 @@
             this.Controls.Add(this.txtbxRevenuA);
             this.Controls.Add(this.lblCoefficientFamilial);
             this.Controls.Add(this.lblRevenuA);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmDeductionFiscale";
             this.Text = "Déductions";
             this.ResumeLayout(false);
