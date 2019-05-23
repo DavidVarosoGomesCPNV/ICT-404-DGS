@@ -16,7 +16,7 @@ namespace ICT_404_ArcheDeNoé
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmArche());
         }
     }
 }

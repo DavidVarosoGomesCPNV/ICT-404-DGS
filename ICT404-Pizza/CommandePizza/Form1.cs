@@ -26,26 +26,48 @@ namespace CommandePizza
            
         private void btnCommander_Click(object sender, EventArgs e)
         {
+            
             float t, nbtables;
-
+            
             t = Convert.ToSingle(txtTables.Text);
             nbtables = t;
 
-            char Exfine = "Extra-fine"[0];
-
+            
+            lblListeCommandes.Visible = true;
+            lblListeCommandes.Text = "Pour la " + nbtables +" :";
+            
 
             if (rdbExtraFine.Checked)
             {
-                lblListeCommandes.Text = "Pour la " + nbtables + " :" + Exfine;
-
+                lblCommande.Text = "Pour la " + nbtables + " : Extrafine, ";
             }
 
+            if (rdbFine.Checked)
+            {
+                lblCommande.Text = "Pour la " + nbtables + " : Fine, ";
+            }
+
+            if (rdbNormale.Checked)
+            {
+                lblCommande.Text = "Pour la " + nbtables + " : Normale, ";
+            }
+
+            if (rdbEpaise.Checked)
+            {
+                lblCommande.Text = "Pour la " + nbtables + " : Epaisse, ";
+            }
+
+    
 
 
-            lblListeCommandes.Visible = true;
-            lblListeCommandes.Text = "Pour la " + nbtables +" :";
 
-            ;
+
+
+
+
+
+
         }
     }
 }
+

@@ -118,7 +118,6 @@
             this.rdbExtraFine.TabStop = true;
             this.rdbExtraFine.Text = "Extra-fine";
             this.rdbExtraFine.UseVisualStyleBackColor = true;
- 
             // 
             // chkAnchois
             // 
@@ -168,7 +167,6 @@
             this.btnCommander.TabIndex = 7;
             this.btnCommander.Text = "Commander";
             this.btnCommander.UseVisualStyleBackColor = true;
-            this.btnCommander.Click += new System.EventHandler(this.btnCommander_Click);
             // 
             // lblCommande
             // 
