@@ -41,7 +41,7 @@
             this.chkCrevettes = new System.Windows.Forms.CheckBox();
             this.btnCommander = new System.Windows.Forms.Button();
             this.lblCommande = new System.Windows.Forms.Label();
-            this.lblListeCommandes = new System.Windows.Forms.Label();
+            this.lblReponse = new System.Windows.Forms.Label();
             this.GrpBoxPâtes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -167,6 +167,7 @@
             this.btnCommander.TabIndex = 7;
             this.btnCommander.Text = "Commander";
             this.btnCommander.UseVisualStyleBackColor = true;
+            this.btnCommander.Click += new System.EventHandler(this.btnCommander_Click_1);
             // 
             // lblCommande
             // 
@@ -177,21 +178,20 @@
             this.lblCommande.TabIndex = 8;
             this.lblCommande.Text = "Commande";
             // 
-            // lblListeCommandes
+            // lblReponse
             // 
-            this.lblListeCommandes.AutoSize = true;
-            this.lblListeCommandes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lblListeCommandes.Location = new System.Drawing.Point(38, 303);
-            this.lblListeCommandes.Name = "lblListeCommandes";
-            this.lblListeCommandes.Size = new System.Drawing.Size(0, 25);
-            this.lblListeCommandes.TabIndex = 9;
+            this.lblReponse.AutoSize = true;
+            this.lblReponse.Location = new System.Drawing.Point(42, 317);
+            this.lblReponse.Name = "lblReponse";
+            this.lblReponse.Size = new System.Drawing.Size(0, 13);
+            this.lblReponse.TabIndex = 10;
             // 
             // frmPizza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(451, 450);
-            this.Controls.Add(this.lblListeCommandes);
+            this.Controls.Add(this.lblReponse);
             this.Controls.Add(this.lblCommande);
             this.Controls.Add(this.btnCommander);
             this.Controls.Add(this.chkCrevettes);
@@ -225,7 +225,7 @@
         private System.Windows.Forms.CheckBox chkCrevettes;
         private System.Windows.Forms.Button btnCommander;
         private System.Windows.Forms.Label lblCommande;
-        private System.Windows.Forms.Label lblListeCommandes;
+        private System.Windows.Forms.Label lblReponse;
     }
 }
 

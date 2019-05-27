@@ -20,47 +20,64 @@ namespace CommandePizza
         public frmPizza()
         {
             InitializeComponent();
-            lblListeCommandes.Visible = false;
         }
 
            
-        private void btnCommander_Click(object sender, EventArgs e)
+       
+
+        private void btnCommander_Click_1(object sender, EventArgs e)
         {
-            
-            float t, nbtables;
-            
-            t = Convert.ToSingle(txtTables.Text);
-            nbtables = t;
+            string reponse;
 
-            
-            lblListeCommandes.Visible = true;
-            lblListeCommandes.Text = "Pour la " + nbtables +" :";
-            
+            reponse = "Pour la " + txtTables.Text + ": ";
 
-            if (rdbExtraFine.Checked)
+
+            if (rdbExtraFine.Checked == true)
             {
-                lblCommande.Text = "Pour la " + nbtables + " : Extrafine, ";
+                reponse = reponse + "Extra- fine ";
             }
 
             if (rdbFine.Checked)
             {
-                lblCommande.Text = "Pour la " + nbtables + " : Fine, ";
+                reponse = reponse  + " : Fine, ";
             }
 
             if (rdbNormale.Checked)
             {
-                lblCommande.Text = "Pour la " + nbtables + " : Normale, ";
+                reponse = reponse + " : Normale, ";
             }
 
             if (rdbEpaise.Checked)
             {
-                lblCommande.Text = "Pour la " + nbtables + " : Epaisse, ";
+                reponse = reponse + " : Epaisse, ";
             }
 
-    
+
+            if (chkAnchois.Checked)
+            {
+                reponse = reponse + " Anchois, ";
+            }
 
 
+            if (chkCapres.Checked)
+            {
+                reponse = reponse + " Câpres, ";
+            }
 
+
+            if (chkJambon.Checked)
+            {
+                reponse = reponse + " Jambon, ";
+            }
+
+
+            if (chkCrevettes.Checked)
+            {
+                reponse = reponse + " Crevettes, ";
+            }
+
+
+            lblReponse.Text = Convert.ToString(reponse);
 
 
 
