@@ -34,52 +34,55 @@ namespace CommandePizza
 
             if (rdbExtraFine.Checked == true)
             {
-                reponse = reponse + "Extra- fine ";
+                reponse = reponse + "Extra- fine,";
             }
 
             if (rdbFine.Checked)
             {
-                reponse = reponse  + " : Fine, ";
+                reponse = reponse  + " : Fine,";
             }
 
             if (rdbNormale.Checked)
             {
-                reponse = reponse + " : Normale, ";
+                reponse = reponse + " : Normale,";
             }
 
             if (rdbEpaise.Checked)
             {
-                reponse = reponse + " : Epaisse, ";
+                reponse = reponse + " : Epaisse,";
             }
 
 
             if (chkAnchois.Checked)
             {
-                reponse = reponse + " Anchois, ";
+                reponse = reponse + " Anchois,";
             }
 
 
             if (chkCapres.Checked)
             {
-                reponse = reponse + " Câpres, ";
+                reponse = reponse + " Câpres,";
             }
 
 
             if (chkJambon.Checked)
             {
-                reponse = reponse + " Jambon, ";
+                reponse = reponse + " Jambon,";
             }
 
 
             if (chkCrevettes.Checked)
             {
-                reponse = reponse + " Crevettes, ";
+                reponse = reponse + " Crevettes,";
             }
-
 
             lblReponse.Text = Convert.ToString(reponse);
 
+            lblReponse.Text = reponse.Substring(0, reponse.Length - 1);
+            
 
+
+            
 
 
 

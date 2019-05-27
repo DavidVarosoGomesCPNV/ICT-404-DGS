@@ -181,9 +181,10 @@
             // lblReponse
             // 
             this.lblReponse.AutoSize = true;
+            this.lblReponse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblReponse.Location = new System.Drawing.Point(42, 317);
             this.lblReponse.Name = "lblReponse";
-            this.lblReponse.Size = new System.Drawing.Size(0, 13);
+            this.lblReponse.Size = new System.Drawing.Size(0, 17);
             this.lblReponse.TabIndex = 10;
             // 
             // frmPizza
