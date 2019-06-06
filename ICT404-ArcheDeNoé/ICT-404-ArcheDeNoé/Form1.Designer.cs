@@ -99,6 +99,7 @@
             this.LBXDroite.Location = new System.Drawing.Point(384, 60);
             this.LBXDroite.Name = "LBXDroite";
             this.LBXDroite.Size = new System.Drawing.Size(212, 446);
+            this.LBXDroite.Sorted = true;
             this.LBXDroite.TabIndex = 7;
             // 
             // frmArche
